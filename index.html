@@ -42,38 +42,59 @@
             <div style="font-weight: bold; font-size: 24px;">Our products</div>     
             <div class="product_container">
                 <div class="product1">
-                    <img src="/images/product_img1.png" name=product1_index_display_img alt="">
+                    <img src="/images/product_img1.png" name = product1_index_display_img alt="">
+                    
                     <div class="product1_infobox">
-                        <div class="font_weight_bold font_size_22">The coffee block</div>
+                        <div class="font_weight_bold font_size_26">The coffee block</div>
                         <div>A perfect alternative for your firewood</div>
                         <a href="product1.html">
                             <button class="btn_attributes">Know more</button>
-                        </a>
+                        </a>      
+                        
+                    </div>
+
+                    <div class="image_slide_container">
+                        <button id = "product1_changeimg_indexpage_left" class= "font_weight_bold font_size_16"> < </button>
+                        <button id = "product1_changeimg_indexpage_right" class= "font_weight_bold font_size_16">></button>
+                        
                     </div>
 
                     <script>
-                       var imgindex = 0;
-                       var timeout = 2000;
-                       
+
+                       var imgindex = 0; 
                        var imgmatrix = [];
                        imgmatrix[0] = '/images/product_img1.png';
                        imgmatrix[1] = '/images/product_img2.png';
                        imgmatrix[2] = '/images/product_img3.png';
-
+                       
+                       var p1_rightbtn =  document.getElementById('product1_changeimg_indexpage_right');
+                       var p1_leftbtn =  document.getElementById('product1_changeimg_indexpage_left');
+                       
+                       p1_rightbtn.addEventListener('click', () =>{
                     
-
-                       function slideshowfunc(){
-                        document.product1_index_display_img.src = imgmatrix[imgindex];
-
-                        if( imgindex < imgmatrix.length - 1 ){
+                        if( imgindex < imgmatrix.length - 1){
                             imgindex++;
-                            }
-                            else
-                            {
-                            imgindex=0;
                         }
+                        else{
+                            imgindex = 0;    
                         }
-                        setTimeout(slideshowfunc(), timeout);
+                        product1_index_display_img.src = imgmatrix[imgindex];
+                        console.log(imgindex);
+                       });
+
+                       p1_leftbtn.addEventListener('click', () =>{
+
+                       if( imgindex >0){
+                           imgindex--;
+                       }
+                       else{
+                        imgindex = imgmatrix.length - 1;   
+                       }
+
+                       product1_index_display_img.src = imgmatrix[imgindex];
+                       console.log(imgindex);
+                      });
+
                     
                     </script>
 
