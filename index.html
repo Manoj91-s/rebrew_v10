@@ -42,7 +42,7 @@
             <div style="font-weight: bold; font-size: 24px;">Our products</div>     
             <div class="product_container">
                 <div class="product1">
-                    <img src="/images/product_img1.png" alt="">
+                    <img src="/images/product_img1.png" name=product1_index_display_img alt="">
                     <div class="product1_infobox">
                         <div class="font_weight_bold font_size_22">The coffee block</div>
                         <div>A perfect alternative for your firewood</div>
@@ -50,6 +50,35 @@
                             <button class="btn_attributes">Know more</button>
                         </a>
                     </div>
+
+                    <script>
+                       var imgindex = 0;
+                       var timeout = 2000;
+                       
+                       var imgmatrix = [];
+                       imgmatrix[0] = '/images/product_img1.png';
+                       imgmatrix[1] = '/images/product_img1.png';
+                       imgmatrix[2] = '/images/product_img1.png';
+
+                    
+
+                       function slideshowfunc(){
+                        document.product1_index_display_img.src = imgmatrix[imgindex];
+
+                        if( imgindex < imgmatrix.length - 1 ){
+                            imgindex++;
+                            }
+                            else
+                            {
+                            imgindex=0;
+                        }
+                        }
+                        setTimeout(slideshowfunc(), timeout);
+                    
+                    </script>
+
+
+
                 </div>
 
                 <div class="product2">
