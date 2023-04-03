@@ -1,0 +1,160 @@
+
+:root{
+    --header-height_product1: 80px;
+}
+
+
+
+.product1_main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 10%;
+   
+    margin-top: var(--header-height_product1);
+    
+    
+}
+
+
+.product1_gallery{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+   
+}
+
+.sub_images{
+    display: flex;
+    gap:10px;
+    
+}
+
+.sub_images img{
+    width: 100px;
+    height: 100px;
+    opacity:0.7;
+    border: 2px solid black;
+    border-radius: 7px;
+
+}
+
+.sub_images img:hover{
+    opacity: 1;
+}
+
+.product1_description{
+    display:flex;
+    flex-direction: column; 
+    width: 700px;
+    
+}
+
+.add_to_basket_block{
+    
+    background-color: #3e3e3e;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    margin-top: 20px;
+    color: white;
+
+    
+}
+
+input{
+    width:40px;
+    height:40px;
+    border-radius: 5px;
+}
+
+button{
+ padding:12px 10px; 
+ border: none;
+ border-radius: 50px;
+ margin-left:5px;
+}
+
+
+
+.main_image img {
+    height: 500px;
+}
+
+#product1_accordion{
+    margin-top: 20px;;
+}
+
+
+.seperation_line{
+    width: 100%;
+    height: 3px;
+    border: 1.5px solid black;
+    background-color: #1e1e1e;
+    
+}
+
+#product1_accordion ul{
+    list-style: none;
+}
+
+
+#product1_accordion label + input[type="radio"] {
+    display:none;
+}
+
+
+#product1_accordion label + input[type="radio"] + .product1_listEl_description_content{
+    max-height:0;
+    overflow: hidden;
+}
+
+#product1_accordion label + input[type="radio"]  + .product1_listEl_moreinfo_content{
+    max-height:0;
+    overflow: hidden;
+}
+
+#product1_accordion label + input[type="radio"]  + .product1_listEl_reviews_content{
+    max-height:0;
+    overflow: hidden;
+}
+
+
+
+#product1_accordion label + input[type="radio"]:checked  + .product1_listEl_description_content{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#product1_accordion label + input[type="radio"]:checked  + .product1_listEl_moreinfo_content{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#product1_accordion label + input[type="radio"]:checked  + .product1_listEl_reviews_content{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+
+#product1_accordion ul li label{
+ font-weight: bold;
+ font-size: larger;
+ 
+}
+
+#product1_accordion ul li{
+    padding: 10px 10px;
+}
+
+.font_attributes{
+    font-family:  'Montserrat', sans-serif;
+}
+
+.font_color{
+    color: white;
+}
+
+.btn_background_color{
+background-color: rgba(0,136,169,1);
+}

@@ -1,0 +1,34 @@
+
+/*Utilities*/
+
+.header_offset{
+margin-top: 80px;
+}
+
+
+.font_family_about_us{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main_about_us{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    flex:1;
+}
+
+.about_us_heading{
+    font-size: 56px;
+    font-weight: Bolder;
+}
+
+
+.about_us_info{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size: 38px;
+}
+
+

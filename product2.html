@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The coffee block</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+        <!--font links -->
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_product2.css">
+        
+    </head>
+<body>
+    <header class="header_attributes">
+        <a class="logo" href="index.html"><h1><span class="pre" >Re</span><span class="post">Brew</span></h1></a>
+        <nav class="home-nav">
+            <a class="nav_link" href="/">Home</a>
+            <a class="nav_link" href="/products.html">Products</a>
+            <a class="nav_link" href="/aboutus.html">About us</a>
+        </nav>
+        <button class="btn_attributes">Contact us</button>
+        <img class="nav_icon" src="/images/free_icon_1.svg">
+        
+    </header>
+
+    <main>
+      <div class="product2_container">
+        <div class="product2_images">
+            <div class="main_image">
+                <img src="/images/product2_img1.png" alt="" id="main_image_box">
+            </div>
+    
+            <div class="sub_images">
+                <img src="/images/product2_img1.png" alt="" onclick = imageClickFunc(this)>
+                <img src="/images/product2_img2.png" alt="" onclick = imageClickFunc(this)>
+                <img src="/images/product2_img3.png" alt="" onclick = imageClickFunc(this)>
+            </div>
+
+            <script>
+                function imageClickFunc(sub_image){
+                    var fullImg = document.getElementById("main_image_box");
+                    fullImg.src = sub_image.src;
+                }
+            </script>
+
+        </div>
+
+        <div class="product2_description font-family">
+            <h1>The coffee cube - Start your fire at light speed without the hassle</h1>
+
+            <div class="add_to_basket_block ">
+                <h1>50 kr</h1>
+                <input type="text">
+                <button class="button_background_color font-family">Add to basket</button>
+            </div>
+
+
+            <div id="product2_accordion">
+                <ul>
+                    <li>
+                        <label for="description">Description</label>
+                        <input type="radio" name="hello" id = "description" checked>
+                        <p class="accordion_paragraphs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                
+                
+                    <li>
+                        <label for="more_info">More information</label>
+                        <input type="radio" name="hello" id="more_info"> 
+                        <p class="accordion_paragraphs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                    </li>
+                
+                    <li>
+                        <label for="reviews">Reviews</label>
+                        <input type="radio" name="hello" id="reviews">
+                        <p class="accordion_paragraphs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </li>
+                
+            </ul>
+            </div>
+        </div>
+        
+
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
