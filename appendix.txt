@@ -40,3 +40,13 @@
         gap:50px; 
     }
 
+
+
+.left_content_attributes{
+    
+    font-size: var(--left-content-font-size);
+    font-family: var(--ff-header);
+    font-weight: var(--left-content-font-weight);
+    font-style: var(--left-content-font-style);
+    color: var(--homepage-left-container-font-color);
+}
