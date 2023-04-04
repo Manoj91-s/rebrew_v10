@@ -159,6 +159,7 @@ main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:100px; 
+   
 }
 
 /*product1*/
@@ -167,10 +168,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-   
+    position:relative;
     
-   
 }
 
 .product1 img{
@@ -179,6 +178,7 @@ main{
     height: 250px;
     border-radius: 20px;
     z-index: 1;
+    
 }
 
 
@@ -194,11 +194,9 @@ main{
     width:300px;
     height:250px;
     background-color: white;
-    position:absolute;
-    top:200px;
-    z-index: 0;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
 }
 
 
@@ -224,7 +222,7 @@ main{
 
 .image_slide_container{
     display: flex;
-    align-items: center;;
+    align-items: center;
     position:absolute;
     inset:0;
     width: 250px;
@@ -233,6 +231,8 @@ main{
     border-radius: 20px;
     margin-top:20px;
     opacity:0;
+    
+    margin-left: 25px;
 }
 
 .image_slide_container:hover{
@@ -271,7 +271,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    
 }
 
 .product2 img{
@@ -279,7 +279,6 @@ main{
     width: 250px;
     height: 250px;
     border-radius: 20px;
-    
     z-index: 1;
 }
 
@@ -294,11 +293,9 @@ main{
     width:300px;
     height:250px;
     background-color: white;
-    position:absolute;
-    top:200px;
-    z-index: 0;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
 }
 
 
@@ -330,7 +327,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    
 }
 
 .product3 img{
@@ -338,7 +335,6 @@ main{
     width: 250px;
     height: 250px;
     border-radius: 20px;
-    
     z-index: 1;
 }
 
@@ -353,11 +349,9 @@ main{
     width:300px;
     height:250px;
     background-color: white;
-    position:absolute;
-    top:200px;
-    z-index: 0;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: -75px;
 }
 
 
@@ -382,33 +376,78 @@ main{
 }
 
 
+@media (width>=1440px){
 
-
-@media (width<=1000px){
-
-    .nav_icon{
-        width:32px;
-        height:32px;
-        display:block;
-        margin-left: 15px;
-    }
-
-    .home-nav{
-        display:none;
-    }
-    
-    .logo{
-        margin-right: auto;
+    .home_section1 div:nth-child(1){
+        font-size: 56pt;
     }
 
     .product_container{
         padding-top:40px;
         display:grid;
-        grid-template-columns: 1fr;
-        gap:200px; 
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+    .home_section1 div:nth-child(1){
+        font-size: 48pt;
+    }
+
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    .home_section1 div:nth-child(1){
+        font-size: 40pt;
+    }
+
+    .product_container{
+
+        padding-top:40px;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
     }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .home_section1 div:nth-child(1){
+        font-size: 32pt;
+    }
+
+    .product_container{
+
+    padding-top:40px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .home_section1 div:nth-child(1){
+        font-size: 24pt;
+    }
+
+    .product_container{
+
+    padding-top:40px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    }
 
 }
 
@@ -416,11 +455,38 @@ main{
 
 
 
-
-
-
-
 /*Utilities*/
+
+
+.fontsize_1440{
+    font-size: 56pt;
+}
+
+.font_style{
+    font-style: italic;
+}
+
+.font_color_white{
+      color:white;
+}
+
+.font_color_black{
+      color:black;
+}
+
+.font_family{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.font_weight_700{
+    font-weight:700;
+}
+
+
+
+
+
 .header_attributes{
     height:var(--header-height);
     background-color: var(--bgc-header) ;
@@ -483,13 +549,7 @@ main{
 }
 
 
-.font_color_white{
-      color:white;
-}
 
-.font_color_black{
-      color:black;
-}
 
 .font_size_16{
     font-size: 16px;

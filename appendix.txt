@@ -15,9 +15,28 @@
 
 
 
+.nav_icon{
+        width:32px;
+        height:32px;
+        display:block;
+        margin-left: 15px;
+    }
+
+    .home-nav{
+        display:none;
+    }
+    
+    .logo{
+        margin-right: auto;
+    }
 
 
 
 
-
+    .product_container{
+        padding-top:40px;
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:50px; 
+    }
 
