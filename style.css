@@ -97,7 +97,7 @@ body::before{
     position: absolute;
     content:'';
     inset:0;
-    opacity: 0.25;
+    opacity: 0.18;
 }
 
 header{
@@ -106,6 +106,7 @@ header{
 
 main{
     position:relative;
+    flex:1;
 }
 
 
@@ -148,10 +149,9 @@ main{
     flex-direction:column;
     align-items: center;
     color: black;
-    
     font-family: var(--ff-header);
     font-style: italic;
-    
+    margin-top: 10px;;
 }
 
 .product_container {
@@ -376,6 +376,109 @@ main{
 }
 
 
+
+/*footer*/
+
+footer{
+    margin-top:50px;
+    background-color: var(--bgc-header);
+    isolation: isolate;
+    padding: 10px 0px;
+}
+
+
+
+.footer-section{
+   
+   display:grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding-left:20%;
+   padding-right:20%;
+   gap:100px;
+   
+}
+
+
+.footer_firstblock {
+    display:flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+}
+
+
+.footer_firstblock div:nth-child(1){
+    padding-bottom: 5px;
+}
+
+
+.social_media_img{
+    display:flex;
+    padding-top:10px;
+    
+}
+
+.social_media_img a:nth-child(1){
+    background-image: url('/images/fb-white.png');
+    width:24px;
+    height:24px;
+    padding-right:10px;
+    margin-right: 5px;
+    
+}
+
+.social_media_img a:nth-child(1):hover{
+ background-image: url('/images/fb-blue.png');
+ background-size: cover;
+ 
+}
+
+.social_media_img a:nth-child(2){
+    background-image: url('/images/insta-white.png');
+    width:24px;
+    height:24px;
+    padding-right:10px;
+    margin-right: 5px;
+    
+}
+
+.social_media_img a:nth-child(2):hover{
+ background-image: url('/images/insta-blue.png');
+ background-size: cover;
+ 
+}
+
+.social_media_img a:nth-child(3){
+    background-image: url('/images/twitter-white.png');
+    width:24px;
+    height:24px;
+    padding-right:10px;
+    margin-right: 5px;
+    
+}
+
+.social_media_img a:nth-child(3):hover{
+ background-image: url('/images/twitter-blue.png');
+ background-size: cover;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+.adress-block{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+
 @media (width>=1440px){
 
     .home_section1 div:nth-child(1){
@@ -489,22 +592,24 @@ main{
 }
 
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .home_section1 div:nth-child(1){
         font-size: 24pt;
     }
+
+    
+    .home_section1 div:nth-child(2){
+        font-size: 10pt;
+    }
+
 
     .product_container{
 
         padding-top:40px;
         display:grid;
         grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    .home_section1 div:nth-child(2){
-        font-size: 10pt;
+        gap:50px;
     }
 
 
@@ -523,19 +628,48 @@ main{
         margin-right: auto;
     }
 
+
     .home_section1{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    padding-top: calc(var(--header-height) + 10px);
-    padding-left:10%;
-    padding-right:10%;
-    padding-bottom: 100px;
-    background-color: #3e3e3e;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        padding-top: calc(var(--header-height) + 10px);
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom:20px;
+        background-color: #3e3e3e;
    
+    }
+
     
-}
+    .footer-section{
+   
+        display:grid;
+        grid-template-columns: 1fr;
+        padding-left:20%;
+        padding-right:20%;
+        gap:50px;
+   
+    }
+
+ 
+
+    .footer_firstblock {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left:0px;
+    }
+
+
+    .adress-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        margin-right:0px;
+    }
 
 }
 
@@ -548,6 +682,14 @@ main{
 
 .fontsize_1440{
     font-size: 56pt;
+}
+
+.font_size_16{
+    font-size: 16pt;
+}
+
+.font_size_12{
+    font-size: 12px;
 }
 
 .font_style{
@@ -632,8 +774,8 @@ main{
 
 
 
-.font_size_16{
-    font-size: 16px;
+.font_size_14{
+    font-size: 14px;
 }
 
 .font_size_22{
