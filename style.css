@@ -779,7 +779,7 @@ footer{
         color:white;
     }
 
-    .mobile-opened{
+    .mobile-menu-opened{
         display:flex;
         flex-direction: column;
         background-color: #3e3e3e;
