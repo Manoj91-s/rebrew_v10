@@ -88,7 +88,7 @@ body{
 }
 
 body::before{
-    background-image: url("/images/1332.jpg");
+    background-image: url("./images/1332.jpg");
     width:100vw;
     background-position: center center;
     background-size: contain;
@@ -419,7 +419,7 @@ footer{
 }
 
 .social_media_img a:nth-child(1){
-    background-image: url('/images/fb-white.png');
+    background-image: url('./images/fb-white.png');
     width:24px;
     height:24px;
     padding-right:10px;
@@ -428,13 +428,13 @@ footer{
 }
 
 .social_media_img a:nth-child(1):hover{
- background-image: url('/images/fb-blue.png');
+ background-image: url('./images/fb-blue.png');
  background-size: cover;
  
 }
 
 .social_media_img a:nth-child(2){
-    background-image: url('/images/insta-white.png');
+    background-image: url('./images/insta-white.png');
     width:24px;
     height:24px;
     padding-right:10px;
@@ -443,13 +443,13 @@ footer{
 }
 
 .social_media_img a:nth-child(2):hover{
- background-image: url('/images/insta-blue.png');
+ background-image: url('./images/insta-blue.png');
  background-size: cover;
  
 }
 
 .social_media_img a:nth-child(3){
-    background-image: url('/images/twitter-white.png');
+    background-image: url('./images/twitter-white.png');
     width:24px;
     height:24px;
     padding-right:10px;
@@ -458,7 +458,7 @@ footer{
 }
 
 .social_media_img a:nth-child(3):hover{
- background-image: url('/images/twitter-blue.png');
+ background-image: url('./images/twitter-blue.png');
  background-size: cover;
  
 }

@@ -14,10 +14,10 @@ nav_icon_id.addEventListener('click', () =>{
         footer_tags[0].classList.add('footer_margin_delete');
         main_tags[0].classList.add('hide_index_main');
         mobile_menu_page_obj[0].classList.add('mobile-menu-opened');
-        nav_icon_id.src = '/images/close_icon.png';
+        nav_icon_id.src = './images/close_icon.png';
     }
     else if (MMSICC > 1){
-        nav_icon_id.src = '/images/menu_icon.png';
+        nav_icon_id.src = './images/menu_icon.png';
         MMSICC = 0;
         footer_tags[0].classList.remove('footer_margin_delete');
         main_tags[0].classList.remove('hide_index_main');
