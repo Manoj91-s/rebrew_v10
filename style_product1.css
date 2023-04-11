@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items:center;
-   
+    background-color: orange;
 }
 
 .sub_images{
@@ -46,8 +46,8 @@
 .product1_description{
     display:flex;
     flex-direction: column; 
-    width: 700px;
-    
+    width: 100%;
+    background-color: green;
 }
 
 .add_to_basket_block{
@@ -58,6 +58,7 @@
     padding-left:10px;
     margin-top: 20px;
     color: white;
+    width:700px;
 
     
 }
@@ -87,7 +88,7 @@ button{
 
 
 .seperation_line{
-    width: 100%;
+    width: 700px;
     height: 3px;
     border: 1.5px solid black;
     background-color: #1e1e1e;
