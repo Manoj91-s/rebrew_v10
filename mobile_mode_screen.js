@@ -17,7 +17,7 @@ nav_icon_id.addEventListener('click', () =>{
         nav_icon_id.src = '/images/close_window_icon.png';
     }
     else if (MMSICC > 1){
-        nav_icon_id.src = '/images/free_icon_1.svg';
+        nav_icon_id.src = '/images/menu_icon.png';
         MMSICC = 0;
         footer_tags[0].classList.remove('footer_margin_delete');
         main_tags[0].classList.remove('hide_index_main');
