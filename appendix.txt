@@ -50,3 +50,20 @@
     font-style: var(--left-content-font-style);
     color: var(--homepage-left-container-font-color);
 }
+
+
+
+
+----------var abreviations-----------
+
+MMSICC = mobile mode screen icon click count. 
+
+
+.is-mobile-open{
+    display:flex;
+    flex-direction: column;
+    background-color: #3e3e3e;
+    flex:1;
+    isolation: isolate;
+    padding-top: calc(var(--header-height) + 10%);
+}
